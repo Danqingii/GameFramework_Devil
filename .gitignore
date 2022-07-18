@@ -6,6 +6,7 @@
 /[Bb]uilds/
 /.idea/
 /[Ll]ogs/
+/.bak/
 
 *.unityproj
 *.booproj
