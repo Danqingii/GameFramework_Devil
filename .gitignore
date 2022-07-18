@@ -1,12 +1,11 @@
-/.vs/
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/.idea/
-/[Ll]ogs/
-/.bak/
+*/.vs/
+*/[Ll]ibrary/
+*/[Tt]emp/
+*/[Oo]bj/
+*/[Bb]uild/
+*/[Bb]uilds/
+*/.idea/
+*/[Ll]ogs/
 
 *.unityproj
 *.booproj
@@ -17,6 +16,8 @@
 *.pidb
 *.svd
 *.csproj
+*.bak
+
 
 //华佗专属
 /HuatuoData/huatuo_repo/*
