@@ -1,0 +1,17 @@
+E:\Unity Project\GameFramework_Devil\Bin\Server.exe
+E:\Unity Project\GameFramework_Devil\Bin\Server.dll.config
+E:\Unity Project\GameFramework_Devil\Bin\Server.deps.json
+E:\Unity Project\GameFramework_Devil\Bin\Server.runtimeconfig.json
+E:\Unity Project\GameFramework_Devil\Bin\Server.dll
+E:\Unity Project\GameFramework_Devil\Bin\Server.pdb
+E:\Unity Project\GameFramework_Devil\Server\App\obj\Debug\Server.App.csproj.AssemblyReference.cache
+E:\Unity Project\GameFramework_Devil\Server\App\obj\Debug\Server.App.GeneratedMSBuildEditorConfig.editorconfig
+E:\Unity Project\GameFramework_Devil\Server\App\obj\Debug\Server.App.AssemblyInfoInputs.cache
+E:\Unity Project\GameFramework_Devil\Server\App\obj\Debug\Server.App.AssemblyInfo.cs
+E:\Unity Project\GameFramework_Devil\Server\App\obj\Debug\Server.App.csproj.CoreCompileInputs.cache
+E:\Unity Project\GameFramework_Devil\Server\App\obj\Debug\Server.App.csproj.CopyComplete
+E:\Unity Project\GameFramework_Devil\Server\App\obj\Debug\Server.dll
+E:\Unity Project\GameFramework_Devil\Server\App\obj\Debug\refint\Server.dll
+E:\Unity Project\GameFramework_Devil\Server\App\obj\Debug\Server.pdb
+E:\Unity Project\GameFramework_Devil\Server\App\obj\Debug\Server.App.genruntimeconfig.cache
+E:\Unity Project\GameFramework_Devil\Server\App\obj\Debug\ref\Server.dll

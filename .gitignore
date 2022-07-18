@@ -1,11 +1,3 @@
-*/.vs/
-*/[Ll]ibrary/
-*/[Tt]emp/
-*/[Oo]bj/
-*/[Bb]uild/
-*/[Bb]uilds/
-*/.idea/
-*/[Ll]ogs/
 
 *.unityproj
 *.booproj
@@ -18,14 +10,19 @@
 *.csproj
 *.bak
 
+--外层
+/.idea/
+/Bin/
 
-//华佗专属
-/HuatuoData/huatuo_repo/*
-/HuatuoData/il2cpp_huatuo_repo/*
-/HuatuoData/LocalIl2CppData/*
-
-/Packages/*
-/Unity/UnityPackageManager/*
+--unity层
+/Unity/HuatuoData/*
+/Unity/Library/*
+/Unity/Logs/*
+/Unity/obj/*
+/Unity/Packages/*
+/Unity/Temp/*
+/Unity/UserSettings/*
+/Unity/ProjectSettings/*
 /Unity/Assets/StreamingAssets/*
 
 
