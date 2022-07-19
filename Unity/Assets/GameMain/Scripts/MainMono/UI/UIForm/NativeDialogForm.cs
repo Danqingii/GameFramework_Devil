@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;
 
-namespace Game
+namespace ET
 {
     public class NativeDialogForm : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace Game
+namespace ET
 {
     /// <summary>
     /// 游戏入口。

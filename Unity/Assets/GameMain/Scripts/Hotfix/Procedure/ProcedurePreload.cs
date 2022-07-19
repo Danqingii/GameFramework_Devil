@@ -13,7 +13,7 @@ using UnityEngine;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
-namespace Game.Hotfix
+namespace ET.Hotfix
 {
     public class ProcedurePreload : ProcedureBase
     {

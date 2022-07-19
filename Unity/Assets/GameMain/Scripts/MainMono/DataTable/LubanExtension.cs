@@ -10,7 +10,7 @@ using System;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace Game
+namespace ET
 {
     public static class LubanExtension
     {

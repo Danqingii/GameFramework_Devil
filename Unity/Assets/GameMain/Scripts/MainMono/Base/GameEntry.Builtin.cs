@@ -1,6 +1,6 @@
 ﻿using UnityGameFramework.Runtime;
 
-namespace Game
+namespace ET
 {
     public partial class GameEntry
     {

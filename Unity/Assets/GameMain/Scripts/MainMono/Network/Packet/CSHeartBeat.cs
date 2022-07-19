@@ -8,7 +8,7 @@
 using ProtoBuf;
 using System;
 
-namespace Game
+namespace ET
 {
     [Serializable, ProtoContract(Name = @"CSHeartBeat")]
     public class CSHeartBeat : CSPacketBase

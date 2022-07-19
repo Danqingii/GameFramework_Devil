@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
-namespace Game
+namespace ET
 {
     public sealed class CSPacketHeader : PacketHeaderBase
     {

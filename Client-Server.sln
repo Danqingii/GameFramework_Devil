@@ -3,6 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{9E9907A9-74D9-417F-A8D7-EC89ECB10D2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{D0DFFC68-A8FB-4F5C-B703-109CB2DD7113}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdParty", "ThirdParty", "{F0DFFC68-A8FB-4F5C-B703-109CB2DD7113}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{F0DFFC68-A8FB-4F5C-B703-110CB2DD1998}"
+EndProject
+
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Hotfix", "Unity\Game.Hotfix.csproj", "{0C66ED81-3EA9-1AD8-5090-E8D25C939F75}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityGameFramework.Runtime", "Unity\UnityGameFramework.Runtime.csproj", "{F3957A05-32FB-7A1D-1800-93B541CF6D76}"
@@ -17,15 +27,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityGameFramework.Editor",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Editor", "Unity\Game.Editor.csproj", "{8298DCBD-7315-42E6-2922-11891D8C374B}"
 EndProject
+
+
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.App", "Server\App\Server.App.csproj", "{44AECBAC-97DB-4BD9-8F21-52E62F178A3D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Hotfix", "Server\Hotfix\Server.Hotfix.csproj", "{414B8AED-F91D-4212-9AAF-8826EF85A066}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Model", "Server\Model\Server.Model.csproj", "{816C8E2D-3566-4C09-8D33-23E18DE45832}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{9E9907A9-74D9-417F-A8D7-EC89ECB10D2F}"
+
+
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnityEngine", "ThirdParty\UnityEngine\UnityEngine.csproj", "{936C8F2D-3566-4C09-8D33-23E18DE45832}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{D0DFFC68-A8FB-4F5C-B703-109CB2DD7113}"
+
+
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Analyzer", "Tools\Analyzer\Analyzer.csproj", "{936C8F2D-1998-4C09-8D44-23E18DE45966}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +89,18 @@ Global
 		{816C8E2D-3566-4C09-8D33-23E18DE45832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{816C8E2D-3566-4C09-8D33-23E18DE45832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{816C8E2D-3566-4C09-8D33-23E18DE45832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{936C8F2D-3566-4C09-8D33-23E18DE45832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{936C8F2D-3566-4C09-8D33-23E18DE45832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{936C8F2D-3566-4C09-8D33-23E18DE45832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{936C8F2D-3566-4C09-8D33-23E18DE45832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{936C8F2D-1998-4C09-8D44-23E18DE45966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{936C8F2D-1998-4C09-8D44-23E18DE45966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{936C8F2D-1998-4C09-8D44-23E18DE45966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{936C8F2D-1998-4C09-8D44-23E18DE45966}.Release|Any CPU.Build.0 = Release|Any CPU
+		--{93778F2D-5546-4C09-9D44-42E18DE10181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		--{93778F2D-5546-4C09-9D44-42E18DE10181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		--{93778F2D-5546-4C09-9D44-42E18DE10181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		--{93778F2D-5546-4C09-9D44-42E18DE10181}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +116,8 @@ Global
 		{44AECBAC-97DB-4BD9-8F21-52E62F178A3D} = {D0DFFC68-A8FB-4F5C-B703-109CB2DD7113}
 		{414B8AED-F91D-4212-9AAF-8826EF85A066} = {D0DFFC68-A8FB-4F5C-B703-109CB2DD7113}
 		{816C8E2D-3566-4C09-8D33-23E18DE45832} = {D0DFFC68-A8FB-4F5C-B703-109CB2DD7113}
+		{936C8F2D-3566-4C09-8D33-23E18DE45832} = {F0DFFC68-A8FB-4F5C-B703-109CB2DD7113}
+		{936C8F2D-1998-4C09-8D44-23E18DE45966} = {F0DFFC68-A8FB-4F5C-B703-110CB2DD1998}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C1487E3D-114B-46AB-93B5-B927217ACD24}

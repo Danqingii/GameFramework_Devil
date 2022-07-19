@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
-namespace Game.Hotfix
+namespace ET.Hotfix
 {
     /// <summary>
     /// 游戏模式。

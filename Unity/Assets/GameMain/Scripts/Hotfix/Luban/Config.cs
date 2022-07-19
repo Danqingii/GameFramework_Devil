@@ -3,7 +3,7 @@ using Bright.Serialization;
 using cfg;
 using ET;
 
-namespace Game.Hotfix
+namespace ET.Hotfix
 {
     public static class Config
     {

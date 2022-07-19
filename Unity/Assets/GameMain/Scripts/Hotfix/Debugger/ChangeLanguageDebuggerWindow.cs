@@ -10,7 +10,7 @@ using GameFramework.Localization;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace Game.Hotfix
+namespace ET.Hotfix
 {
     public class ChangeLanguageDebuggerWindow : IDebuggerWindow
     {
@@ -77,7 +77,7 @@ namespace Game.Hotfix
 
         private void SaveLanguage()
         {
-            GameEntry.Setting.SetString(Game.Constant.Setting.Language, GameEntry.Localization.Language.ToString());
+            GameEntry.Setting.SetString(Constant.Setting.Language, GameEntry.Localization.Language.ToString());
             GameEntry.Setting.Save();
             m_NeedRestart = true;
         }

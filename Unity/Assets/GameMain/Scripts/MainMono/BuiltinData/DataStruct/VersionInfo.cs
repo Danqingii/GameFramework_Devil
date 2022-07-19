@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
-namespace Game
+namespace ET
 {
     /// <summary>
     /// 核查信息。

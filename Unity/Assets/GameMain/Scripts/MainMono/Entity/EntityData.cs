@@ -8,7 +8,7 @@
 using System;
 using UnityEngine;
 
-namespace Game
+namespace ET
 {
     [Serializable]
     public abstract class EntityData

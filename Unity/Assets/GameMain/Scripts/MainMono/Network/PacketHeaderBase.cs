@@ -8,7 +8,7 @@
 using GameFramework;
 using GameFramework.Network;
 
-namespace Game
+namespace ET
 {
     public abstract class PacketHeaderBase : IPacketHeader, IReference
     {

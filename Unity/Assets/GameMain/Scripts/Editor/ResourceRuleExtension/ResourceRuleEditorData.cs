@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityGameFramework.Editor.ResourceTools;
 
-namespace Game.Editor
+namespace ET.Editor
 {
     public class ResourceRuleEditorData : ScriptableObject
     {

@@ -16,7 +16,7 @@ using System.IO;
 using System.Reflection;
 using UnityGameFramework.Runtime;
 
-namespace Game
+namespace ET
 {
     public class NetworkChannelHelper : INetworkChannelHelper
     {

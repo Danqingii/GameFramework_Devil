@@ -7,7 +7,7 @@
 
 using System;
 
-namespace Game
+namespace ET
 {
     public static class WebUtility
     {

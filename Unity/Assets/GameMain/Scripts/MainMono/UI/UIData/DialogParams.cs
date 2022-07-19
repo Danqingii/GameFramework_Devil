@@ -7,7 +7,7 @@
 
 using GameFramework;
 
-namespace Game
+namespace ET
 {
     /// <summary>
     /// 对话框显示数据。

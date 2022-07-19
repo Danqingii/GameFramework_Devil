@@ -13,7 +13,7 @@ using System.Text;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace Game
+namespace ET
 {
     /// <summary>
     /// 默认数据表辅助器。

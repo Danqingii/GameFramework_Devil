@@ -7,7 +7,7 @@
 
 using GameFramework;
 
-namespace Game
+namespace ET
 {
     public static class AssetUtility
     {

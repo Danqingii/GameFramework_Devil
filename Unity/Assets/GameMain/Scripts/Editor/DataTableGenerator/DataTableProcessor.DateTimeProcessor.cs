@@ -8,7 +8,7 @@
 using System;
 using System.IO;
 
-namespace Game.Editor.DataTableTools
+namespace ET.Editor.DataTableTools
 {
     public sealed partial class DataTableProcessor
     {

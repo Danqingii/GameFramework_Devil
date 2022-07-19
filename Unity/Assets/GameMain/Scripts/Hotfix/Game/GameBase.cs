@@ -9,7 +9,7 @@ using GameFramework.Event;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace Game.Hotfix
+namespace ET.Hotfix
 {
     public abstract class GameBase
     {

@@ -7,7 +7,7 @@ using GameFramework.Resource;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace Game
+namespace ET
 {
     public class ProcedureLoadHotfix : ProcedureBase
     {

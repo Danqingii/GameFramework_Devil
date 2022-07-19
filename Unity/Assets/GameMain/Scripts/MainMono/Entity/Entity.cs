@@ -9,7 +9,7 @@ using GameFramework;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace Game
+namespace ET
 {
     public abstract class Entity : EntityLogic
     {

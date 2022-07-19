@@ -11,7 +11,7 @@ using UnityEngine;
 using UnityGameFramework.Editor;
 using UnityGameFramework.Editor.ResourceTools;
 
-namespace Game.Editor
+namespace ET.Editor
 {
     public static class GameFrameworkConfigs
     {
