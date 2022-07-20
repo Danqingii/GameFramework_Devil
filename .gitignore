@@ -1,4 +1,3 @@
-
 *.unityproj
 *.booproj
 *.suo
@@ -10,11 +9,18 @@
 *.csproj
 *.bak
 
+*/.svn/
+.svn/
+bin/
+Bin/
+obj/
+
 --外层
 /.idea/
 /Bin/
 
 --unity层
+/Unity/.idea/*
 /Unity/HuatuoData/*
 /Unity/Library/*
 /Unity/Logs/*
@@ -25,4 +31,19 @@
 /Unity/ProjectSettings/*
 /Unity/Assets/StreamingAssets/*
 
+--server层
+!/Server/App/Server.App.csproj
+!/Server/Hotfix/Server.Hotfix.csproj
+!/Server/Model/Server.Model.csproj
+/Server/App/obj/*
+/Server/Hotfix/obj/*
+/Server/Model/obj/*
 
+--thirdParty层
+!/ThirdParty/ETTask/ETTask.csproj
+!/ThirdParty/ShareLib/ShareLib.csproj
+!/ThirdParty/UnityEngine/UnityEngine.csproj
+/ThirdParty/UnityEngine/obj/*
+
+--tools层
+!/Tools/Analyzer/Analyzer.csproj
