@@ -36,10 +36,4 @@
     <Content Remove="C:\Users\Guang\.nuget\packages\mongodb.libmongocrypt\1.5.4\contentFiles\any\netstandard2.1\mongocrypt.dll" />
   </ItemGroup>
   
-  <ItemGroup>
-    <Reference Include="ICSharpCode.SharpZipLib, Version=1.3.3.11, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
-      <HintPath>C:\Users\Guang\.nuget\packages\sharpziplib\1.3.3\lib\netstandard2.1\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  
 </Project>

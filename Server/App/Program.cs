@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Threading;
+using CommandLine;
+using NLog;
+
 namespace ET
 {
 	static class Program
 	{
 		private static void Main(string[] args)
 		{
-			/*AppDomain.CurrentDomain.UnhandledException += (sender, e) =>
+			AppDomain.CurrentDomain.UnhandledException += (sender, e) =>
 			{
 				Log.Error(e.ExceptionObject.ToString());
 			};
@@ -57,7 +60,7 @@ namespace ET
 			catch (Exception e)
 			{
 				Log.Error(e);
-			}*/
+			}
 		}
 	}
 }

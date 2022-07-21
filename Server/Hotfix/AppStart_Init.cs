@@ -3,16 +3,16 @@ using System.Net;
 
 namespace ET
 {
-    public class AppStart_Init
+    public class AppStart_Init : AEvent<EventType.AppStart>
     {
-        /*protected override void Run(EventType.AppStart args)
+        protected override void Run(EventType.AppStart args)
         {
             RunAsync(args).Coroutine();
         }
         
         private async ETTask RunAsync(EventType.AppStart args)
         {
-            Game.Scene.AddComponent<ConfigComponent>();
+            /*Game.Scene.AddComponent<ConfigComponent>();
             await ConfigComponent.Instance.LoadAsync();
 
             StartProcessConfig processConfig = StartProcessConfigCategory.Instance.Get(Game.Options.Process);
@@ -69,7 +69,8 @@ namespace ET
             if (Game.Options.Console == 1)
             {
                 Game.Scene.AddComponent<ConsoleComponent>();
-            }
-        }*/
+            }*/
+            await ETTask.CompletedTask;
+        }
     }
 }
