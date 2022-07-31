@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityGameFramework.Runtime"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameFramework", "Unity\GameFramework.csproj", "{99F19A12-8911-B619-55FB-E6FF52055C84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Unity\Game.csproj", "{70D3EFAA-3327-BD04-AFAE-952E7608D229}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Mono", "Unity\Game.Mono.csproj", "{70D3EFAA-3327-BD04-AFAE-952E7608D229}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdParty", "Unity\ThirdParty.csproj", "{1C7A7AB1-0775-AE95-DA0A-05795629638F}"
 EndProject

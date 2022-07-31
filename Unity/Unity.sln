@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdParty", "ThirdParty.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameFramework", "GameFramework.csproj", "{99f19a12-8911-b619-55fb-e6ff52055c84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Game.csproj", "{70d3efaa-3327-bd04-afae-952e7608d229}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Mono", "Game.Mono.csproj", "{c4971649-4d5d-ad44-e09c-0c4e28c12728}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityGameFramework.Editor", "UnityGameFramework.Editor.csproj", "{60ee053c-afbd-40bd-5f9e-17703ecd8866}"
 EndProject
@@ -37,10 +37,10 @@ Global
 		{99f19a12-8911-b619-55fb-e6ff52055c84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99f19a12-8911-b619-55fb-e6ff52055c84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99f19a12-8911-b619-55fb-e6ff52055c84}.Release|Any CPU.Build.0 = Release|Any CPU
-		{70d3efaa-3327-bd04-afae-952e7608d229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{70d3efaa-3327-bd04-afae-952e7608d229}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{70d3efaa-3327-bd04-afae-952e7608d229}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{70d3efaa-3327-bd04-afae-952e7608d229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{c4971649-4d5d-ad44-e09c-0c4e28c12728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{c4971649-4d5d-ad44-e09c-0c4e28c12728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{c4971649-4d5d-ad44-e09c-0c4e28c12728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{c4971649-4d5d-ad44-e09c-0c4e28c12728}.Release|Any CPU.Build.0 = Release|Any CPU
 		{60ee053c-afbd-40bd-5f9e-17703ecd8866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{60ee053c-afbd-40bd-5f9e-17703ecd8866}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60ee053c-afbd-40bd-5f9e-17703ecd8866}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -9,19 +9,15 @@
 *.csproj
 *.bak
 
-*/.svn/
-.svn/
-bin/
-Bin/
-obj/
-
 --外层
-/.idea/
-/Bin/
+bin/
+.idea/
+Bin/
+Obj/
 
 --unity层
 /Unity/.idea/*
-/Unity/HuatuoData/*
+/Unity/build/*
 /Unity/Library/*
 /Unity/Logs/*
 /Unity/obj/*
@@ -47,3 +43,10 @@ obj/
 
 --tools层
 !/Tools/Analyzer/Analyzer.csproj
+
+--HybridCLRData
+/Unity/HybridCLRData/AssembliesPostIl2CppStrip/*
+/Unity/HybridCLRData/HotFixDlls/*
+/Unity/HybridCLRData/LocalIl2CppData/*
+/Unity/HybridCLRData/il2cpp_plus_repo/*
+/Unity/HybridCLRData/hybridclr_repo/*
