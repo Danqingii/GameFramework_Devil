@@ -1,6 +1,6 @@
 ﻿using Microsoft.CodeAnalysis;
 
-namespace ET.Analyzer
+namespace Game.Analyzer
 {
     public static class ETTaskInSyncMethodAnalyzerRule
     {

@@ -7,7 +7,7 @@
 
 using GameFramework.Network;
 
-namespace ET
+namespace Game
 {
     public abstract class PacketHandlerBase : IPacketHandler
     {

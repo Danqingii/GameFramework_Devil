@@ -7,7 +7,7 @@ using GameFramework.Resource;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace ET
+namespace Game
 {
     public class ProcedureLoadHotfix : ProcedureBase
     {
@@ -104,7 +104,7 @@ namespace ET
 
         private void LoadMetadataAssembly(string dllName)
         {
-            string assetName = AssetUtility.GetMetadataAssemblyAsset(dllName);
+            string assetName = AssetUtility.GetMetadataAotDllAsset(dllName);
             GameEntry.Resource.LoadAsset(assetName,
                 new LoadAssetCallbacks(OnLoadMetadataAssetSuccess, OnLoadLoadMetadataAssetFail));
         }

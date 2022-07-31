@@ -1,4 +1,4 @@
-﻿namespace ET
+﻿namespace Game
 {
     public static class ObjectHelper
     {

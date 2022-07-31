@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ET.Editor
+namespace Game.Editor
 {
     public static class ResourceRuleEditorUtility
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ET
+namespace Game
 {
     public interface ILateUpdate
     {

@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using Path = System.IO.Path;
 
-namespace ET
+namespace Game
 {
     public static class ProcessHelper
     {

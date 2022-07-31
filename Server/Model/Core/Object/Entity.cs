@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace ET
+namespace Game
 {
     [Flags]
     public enum EntityStatus: byte

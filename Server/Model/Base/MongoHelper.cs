@@ -4,7 +4,7 @@ using MongoDB.Bson;
 using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization;
 
-namespace ET
+namespace Game
 {
     public static class MongoHelper
     {

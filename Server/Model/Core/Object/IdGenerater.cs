@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace ET
+namespace Game
 {
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
     public struct IdStruct

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ET
+namespace Game
 {
     /// <summary>
     /// 组件类父级实体类型约束

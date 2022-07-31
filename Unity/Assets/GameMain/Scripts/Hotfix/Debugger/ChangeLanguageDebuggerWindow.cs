@@ -10,7 +10,7 @@ using GameFramework.Localization;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace ET.Hotfix
+namespace Game.Hotfix
 {
     public class ChangeLanguageDebuggerWindow : IDebuggerWindow
     {

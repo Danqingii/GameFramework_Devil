@@ -3,7 +3,7 @@ using System.Threading;
 using CommandLine;
 using NLog;
 
-namespace ET
+namespace Game
 {
 	static class Program
 	{

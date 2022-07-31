@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ET
+namespace Game
 {
     /// <summary>
     /// 对于特殊实体类 允许类内部声明方法的标签

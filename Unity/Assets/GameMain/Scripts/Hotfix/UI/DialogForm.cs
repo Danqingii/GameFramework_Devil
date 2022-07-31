@@ -10,7 +10,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;
 
-namespace ET.Hotfix
+namespace Game.Hotfix
 {
     public class DialogForm : UGuiForm
     {

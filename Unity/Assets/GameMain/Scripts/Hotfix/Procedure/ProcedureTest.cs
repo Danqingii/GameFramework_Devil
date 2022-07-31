@@ -2,11 +2,12 @@
 using GameFramework.Event;
 using GameFramework.Resource;
 using System.Collections.Generic;
+using GameFramework.Procedure;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
-namespace ET.Hotfix
+namespace Game.Hotfix
 {
     public class ProcedureTest : ProcedureBase
     {

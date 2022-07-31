@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace ET
+namespace Game
 {
     public static class Recast
     {

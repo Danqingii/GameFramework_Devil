@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
-namespace ET.Editor.DataTableTools
+namespace Game.Editor.DataTableTools
 {
     public sealed partial class DataTableProcessor
     {

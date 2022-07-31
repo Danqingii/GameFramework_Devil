@@ -5,12 +5,12 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
-using ET.Hotfix;
+using Game.Hotfix;
 using GameFramework;
 using UnityEditor;
 using UnityEngine;
 
-namespace ET.Editor.DataTableTools
+namespace Game.Editor.DataTableTools
 {
     public sealed class DataTableGeneratorMenu
     {

@@ -13,7 +13,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace ET.Editor.DataTableTools
+namespace Game.Editor.DataTableTools
 {
     public sealed partial class DataTableProcessor
     {

@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
 using Bright.Serialization;
 using cfg;
-using ET;
+using Game;
 
-namespace ET.Hotfix
+namespace Game.Hotfix
 {
     public static class Config
     {
@@ -27,6 +27,7 @@ namespace ET.Hotfix
                 return new ByteBuf(System.IO.File.ReadAllBytes($"Assets/GameMain/DataTables/Bin/{file}.bytes"));
 #else
                //TODO 使用GF加载 
+                return null;
 #endif
             }
 

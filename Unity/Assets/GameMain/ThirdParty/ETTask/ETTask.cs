@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Runtime.ExceptionServices;
 
-namespace ET
+namespace Game
 {
     [AsyncMethodBuilder(typeof (ETAsyncTaskMethodBuilder))]
     public class ETTask: ICriticalNotifyCompletion

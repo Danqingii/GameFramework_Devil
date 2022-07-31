@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ET
+namespace Game
 {
     public static class HuatuoApi
     {

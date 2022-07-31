@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;
 
-namespace ET
+namespace Game
 {
     /// <summary>
     /// uGUI 界面组辅助器。

@@ -10,7 +10,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityGameFramework.Editor.ResourceTools;
 
-namespace ET.Editor
+namespace Game.Editor
 {
     public sealed class GameBuildEventHandler : IBuildEventHandler
     {

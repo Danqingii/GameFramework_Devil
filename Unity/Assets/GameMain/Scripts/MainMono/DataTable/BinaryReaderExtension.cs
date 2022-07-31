@@ -9,7 +9,7 @@ using System;
 using System.IO;
 using UnityEngine;
 
-namespace ET
+namespace Game
 {
     public static class BinaryReaderExtension
     {

@@ -2,7 +2,7 @@
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace ET.Analyzer
+namespace Game.Analyzer
 {
     public static class AnalyzerHelper
     {

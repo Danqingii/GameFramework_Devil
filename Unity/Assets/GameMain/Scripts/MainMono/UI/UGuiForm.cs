@@ -12,7 +12,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;
 
-namespace ET
+namespace Game
 {
     public abstract class UGuiForm : UIFormLogic
     {

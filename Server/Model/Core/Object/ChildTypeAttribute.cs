@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ET
+namespace Game
 {
     /// <summary>
     /// 实体类AddChild方法参数约束

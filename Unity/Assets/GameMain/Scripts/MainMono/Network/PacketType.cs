@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
-namespace ET
+namespace Game
 {
     public enum PacketType : byte
     {

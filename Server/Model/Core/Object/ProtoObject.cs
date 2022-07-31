@@ -3,7 +3,7 @@
 using System.ComponentModel;
 #endif
 
-namespace ET
+namespace Game
 {
 #if !NOT_UNITY
     public interface ISupportInitialize

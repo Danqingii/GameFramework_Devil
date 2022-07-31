@@ -2,8 +2,9 @@
 using GameFramework.Fsm;
 using GameFramework.Procedure;
 using UnityEngine;
+using UnityGameFramework.Runtime;
 
-namespace ET.Hotfix
+namespace Game.Hotfix
 {
     public class AppDomain
     {

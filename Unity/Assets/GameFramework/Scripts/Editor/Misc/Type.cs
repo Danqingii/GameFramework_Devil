@@ -23,7 +23,7 @@ namespace UnityGameFramework.Editor
 #endif
             "Assembly-CSharp",
             
-            "Game",
+            "Game.Mono",
         };
 
         private static readonly string[] RuntimeOrEditorAssemblyNames =

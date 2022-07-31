@@ -10,7 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace ET.Editor.DataTableTools
+namespace Game.Editor.DataTableTools
 {
     public sealed partial class DataTableProcessor
     {

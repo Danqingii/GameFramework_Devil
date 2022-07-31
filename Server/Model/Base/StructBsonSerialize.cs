@@ -5,7 +5,7 @@ using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 
-namespace ET
+namespace Game
 {
     public class StructBsonSerialize<TValue>: StructSerializerBase<TValue> where TValue : struct
     {

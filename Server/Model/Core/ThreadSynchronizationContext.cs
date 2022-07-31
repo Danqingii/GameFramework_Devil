@@ -2,7 +2,7 @@
 using System.Collections.Concurrent;
 using System.Threading;
 
-namespace ET
+namespace Game
 {
     public class ThreadSynchronizationContext : SynchronizationContext
     {

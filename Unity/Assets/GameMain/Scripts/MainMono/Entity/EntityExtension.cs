@@ -9,7 +9,7 @@ using GameFramework.DataTable;
 using System;
 using UnityGameFramework.Runtime;
 
-namespace ET
+namespace Game
 {
     public static class EntityExtension
     {

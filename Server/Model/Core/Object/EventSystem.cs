@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace ET
+namespace Game
 {
     using OneTypeSystems = UnOrderMultiMap<Type, object>;
 

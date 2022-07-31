@@ -1,4 +1,4 @@
-﻿namespace ET
+﻿namespace Game
 {
     /// <summary>
     /// 每个Config的基类

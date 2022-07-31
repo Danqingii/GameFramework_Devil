@@ -7,7 +7,7 @@
 
 using GameFramework;
 
-namespace ET
+namespace Game
 {
     public static class AssetUtility
     {
@@ -70,12 +70,12 @@ namespace ET
         
         public static string GetHotfixAsset(string assetName)
         {
-            return Utility.Text.Format("Assets/GameMain/HotfixDll/{0}.dll.bytes",assetName);
+            return Utility.Text.Format("Assets/GameMain/HybridCLRBuildCache/Hotfix/{0}.dll.bytes",assetName);
         }
 
-        public static string GetMetadataAssemblyAsset(string assetName)
+        public static string GetMetadataAotDllAsset(string assetName)
         {
-            return Utility.Text.Format("Assets/GameMain/MetadataAssemblys/{0}.dll.bytes",assetName);
+            return Utility.Text.Format("Assets/GameMain/HybridCLRBuildCache/AOTAssembly/{0}.dll.bytes",assetName);
         }
     }
 }

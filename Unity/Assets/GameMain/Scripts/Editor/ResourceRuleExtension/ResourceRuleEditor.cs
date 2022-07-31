@@ -9,7 +9,7 @@ using UnityEditorInternal;
 using UnityGameFramework.Editor.ResourceTools;
 using GFResource = UnityGameFramework.Editor.ResourceTools.Resource;
 
-namespace ET.Editor
+namespace Game.Editor
 {
     /// <summary>
     /// Resource 规则编辑器，支持按规则配置自动生成 ResourceCollection.xml

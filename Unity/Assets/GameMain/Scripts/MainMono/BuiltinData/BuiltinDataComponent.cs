@@ -9,7 +9,7 @@ using GameFramework;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace ET
+namespace Game
 {
     public class BuiltinDataComponent : GameFrameworkComponent
     {

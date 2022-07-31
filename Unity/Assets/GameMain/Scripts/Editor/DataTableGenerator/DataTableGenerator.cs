@@ -13,7 +13,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
-namespace ET.Editor.DataTableTools
+namespace Game.Editor.DataTableTools
 {
     public sealed class DataTableGenerator
     {

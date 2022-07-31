@@ -1,4 +1,4 @@
-﻿namespace ET.Analyzer
+﻿namespace Game.Analyzer
 {
     public static class DiagnosticIds
     {

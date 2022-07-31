@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Security.Cryptography;
 
-namespace ET
+namespace Game
 {
     public static class MD5Helper
     {
