@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 
-namespace Game
+namespace ET
 {
     [AsyncMethodBuilder(typeof (AsyncETVoidMethodBuilder))]
     internal struct ETVoid: ICriticalNotifyCompletion

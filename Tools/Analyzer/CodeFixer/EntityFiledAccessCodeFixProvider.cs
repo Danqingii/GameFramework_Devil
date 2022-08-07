@@ -10,7 +10,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Formatting;
 
-namespace Game.Analyzer
+namespace Game.Mono.Analyzer
 {
     [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(EntityFiledAccessCodeFixProvider)), Shared]
     public class EntityFiledAccessCodeFixProvider: CodeFixProvider

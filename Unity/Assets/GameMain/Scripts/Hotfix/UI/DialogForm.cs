@@ -5,10 +5,12 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using Game.Mono;
 using GameFramework;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;
+using GameEntry = UnityGameFramework.Runtime.GameEntry;
 
 namespace Game.Hotfix
 {
@@ -137,7 +139,7 @@ namespace Game.Hotfix
         {
             if (m_PauseGame)
             {
-                GameEntry.Base.ResumeGame();
+                Mono.GameEntry.Base.ResumeGame();
             }
 
             m_DialogMode = 1;
@@ -170,7 +172,7 @@ namespace Game.Hotfix
         {
             if (m_PauseGame)
             {
-                GameEntry.Base.PauseGame();
+                Mono.GameEntry.Base.PauseGame();
             }
         }
 
@@ -178,7 +180,7 @@ namespace Game.Hotfix
         {
             if (string.IsNullOrEmpty(confirmText))
             {
-                confirmText = GameEntry.Localization.GetString("Dialog.ConfirmButton");
+                confirmText = Mono.GameEntry.Localization.GetString("Dialog.ConfirmButton");
             }
 
             for (int i = 0; i < m_ConfirmTexts.Length; i++)
@@ -191,7 +193,7 @@ namespace Game.Hotfix
         {
             if (string.IsNullOrEmpty(cancelText))
             {
-                cancelText = GameEntry.Localization.GetString("Dialog.CancelButton");
+                cancelText = Mono.GameEntry.Localization.GetString("Dialog.CancelButton");
             }
 
             for (int i = 0; i < m_CancelTexts.Length; i++)
@@ -204,7 +206,7 @@ namespace Game.Hotfix
         {
             if (string.IsNullOrEmpty(otherText))
             {
-                otherText = GameEntry.Localization.GetString("Dialog.OtherButton");
+                otherText = Mono.GameEntry.Localization.GetString("Dialog.OtherButton");
             }
 
             for (int i = 0; i < m_OtherTexts.Length; i++)

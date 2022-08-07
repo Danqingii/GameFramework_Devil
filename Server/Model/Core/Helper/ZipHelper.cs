@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using ICSharpCode.SharpZipLib.Zip.Compression;
 
-namespace Game
+namespace ET
 {
 	public static class ZipHelper
 	{

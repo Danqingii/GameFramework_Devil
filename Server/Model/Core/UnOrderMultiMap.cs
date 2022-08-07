@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Game
+namespace ET
 {
     public class UnOrderMultiMap<T, K>: Dictionary<T, List<K>>
     {

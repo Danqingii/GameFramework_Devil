@@ -1,15 +1,21 @@
-using System.Threading.Tasks;
-using Bright.Serialization;
+﻿using Bright.Serialization;
 using cfg;
-using Game;
+using ET;
 
 namespace Game.Hotfix
 {
-    public static class Config
+    /// <summary>
+    /// 控制热更流程的自定义组件
+    /// </summary>
+    public class Launcher
     {
         private static Tables m_Tables;
-
         public static Tables Tables => m_Tables;
+
+        static Launcher()
+        {
+            m_Tables = new Tables();
+        }
         
         public static async ETTask LoadConfig()
         {
@@ -35,5 +41,3 @@ namespace Game.Hotfix
         }
     }
 }
-
-

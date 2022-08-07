@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Random = System.Random;
 
-namespace Game
+namespace ET
 {
     public static class RandomEx
     {

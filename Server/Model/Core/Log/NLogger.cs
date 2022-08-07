@@ -1,7 +1,7 @@
 ﻿#if NOT_UNITY
 using NLog;
 
-namespace Game
+namespace ET
 {
     public class NLogger: ILog
     {

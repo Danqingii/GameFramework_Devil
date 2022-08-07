@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
-namespace Game
+namespace Game.Mono
 {
     /// <summary>
     /// 核查信息。

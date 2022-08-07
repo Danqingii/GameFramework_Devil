@@ -7,7 +7,7 @@
 
 using GameFramework;
 
-namespace Game
+namespace Game.Mono
 {
     /// <summary>
     /// 对话框显示数据。

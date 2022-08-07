@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Game
+namespace ET
 {
     public interface IEvent
     {

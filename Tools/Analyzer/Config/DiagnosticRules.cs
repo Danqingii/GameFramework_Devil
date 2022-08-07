@@ -1,6 +1,6 @@
 ﻿using Microsoft.CodeAnalysis;
 
-namespace Game.Analyzer
+namespace Game.Mono.Analyzer
 {
     public static class ETTaskInSyncMethodAnalyzerRule
     {

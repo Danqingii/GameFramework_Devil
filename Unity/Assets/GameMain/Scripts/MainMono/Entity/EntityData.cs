@@ -8,7 +8,7 @@
 using System;
 using UnityEngine;
 
-namespace Game
+namespace Game.Mono
 {
     [Serializable]
     public abstract class EntityData

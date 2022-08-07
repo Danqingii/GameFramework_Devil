@@ -1,4 +1,4 @@
-﻿namespace Game
+﻿namespace Game.Mono
 {
     public partial class GameEntry
     {

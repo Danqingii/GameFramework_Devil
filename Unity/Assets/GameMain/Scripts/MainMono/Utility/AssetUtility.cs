@@ -7,7 +7,7 @@
 
 using GameFramework;
 
-namespace Game
+namespace Game.Mono
 {
     public static class AssetUtility
     {
@@ -20,11 +20,11 @@ namespace Game
         {
             if (GameEntry.Base.EditorResourceMode)
             {
-                return Utility.Text.Format("Assets/GameMain/DataTables/Json/{0}.json", assetName);
+                return Utility.Text.Format("Assets/GameMain/DataTables/Bin/{0}.bytes", assetName);
             }
             else
             {
-                return Utility.Text.Format("Assets/GameMain/DataTables/Bin/{0}.json", assetName);
+                return Utility.Text.Format("Assets/GameMain/DataTables/Bin/{0}.bytes", assetName);
             }
         }
 

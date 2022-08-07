@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace Game
+namespace ET
 {
 	public static class FileHelper
 	{

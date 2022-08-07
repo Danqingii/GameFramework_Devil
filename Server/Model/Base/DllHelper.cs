@@ -2,7 +2,7 @@
 using System.Reflection;
 using System.Runtime.Loader;
 
-namespace Game
+namespace ET
 {
     public static class DllHelper
     {

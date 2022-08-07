@@ -5,10 +5,12 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using Game.Mono;
 using GameFramework.Debugger;
 using GameFramework.Localization;
 using UnityEngine;
 using UnityGameFramework.Runtime;
+using GameEntry = UnityGameFramework.Runtime.GameEntry;
 
 namespace Game.Hotfix
 {
@@ -58,17 +60,17 @@ namespace Game.Hotfix
             {
                 if (GUILayout.Button("Chinese Simplified", GUILayout.Height(30)))
                 {
-                    GameEntry.Localization.Language = Language.ChineseSimplified;
+                    Mono.GameEntry.Localization.Language = Language.ChineseSimplified;
                     SaveLanguage();
                 }
                 if (GUILayout.Button("Chinese Traditional", GUILayout.Height(30)))
                 {
-                    GameEntry.Localization.Language = Language.ChineseTraditional;
+                    Mono.GameEntry.Localization.Language = Language.ChineseTraditional;
                     SaveLanguage();
                 }
                 if (GUILayout.Button("English", GUILayout.Height(30)))
                 {
-                    GameEntry.Localization.Language = Language.English;
+                    Mono.GameEntry.Localization.Language = Language.English;
                     SaveLanguage();
                 }
             }
@@ -77,8 +79,8 @@ namespace Game.Hotfix
 
         private void SaveLanguage()
         {
-            GameEntry.Setting.SetString(Constant.Setting.Language, GameEntry.Localization.Language.ToString());
-            GameEntry.Setting.Save();
+            Mono.GameEntry.Setting.SetString(Constant.Setting.Language, Mono.GameEntry.Localization.Language.ToString());
+            Mono.GameEntry.Setting.Save();
             m_NeedRestart = true;
         }
     }

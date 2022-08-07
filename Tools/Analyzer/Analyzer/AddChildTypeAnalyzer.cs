@@ -6,7 +6,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace Game.Analyzer
+namespace Game.Mono.Analyzer
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class AddChildTypeAnalyzer: DiagnosticAnalyzer

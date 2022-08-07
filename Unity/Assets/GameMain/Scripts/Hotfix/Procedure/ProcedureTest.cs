@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using GameFramework.Procedure;
 using UnityEngine;
 using UnityGameFramework.Runtime;
+using ProcedureBase = Game.Mono.ProcedureBase;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
 namespace Game.Hotfix
@@ -18,10 +19,10 @@ namespace Game.Hotfix
             base.OnEnter(procedureOwner);
             Log.Debug("进入测试流程");
 
-            foreach (var item in Config.Tables.TbItem.DataList)
+            /*foreach (var item in Config.Tables.TbItem.DataList)
             {
                 Log.Debug($"{item.Id}/{item.Name}/{item.Desc}");
-            }
+            }*/
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace Game
+namespace ET
 {
     public class FileLogger: ILog
     {

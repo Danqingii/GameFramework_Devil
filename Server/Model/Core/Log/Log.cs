@@ -7,7 +7,7 @@ using System.Net;
 using NLog;
 #endif
 
-namespace Game
+namespace ET
 {
     public static class Log
     {

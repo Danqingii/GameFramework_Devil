@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Game
+namespace ET
 {
     public class MultiMap<T, K>: SortedDictionary<T, List<K>>
     {

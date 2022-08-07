@@ -1,7 +1,7 @@
 using System;
 using System.Net;
 
-namespace Game
+namespace ET
 {
     public class AppStart_Init : AEvent<EventType.AppStart>
     {

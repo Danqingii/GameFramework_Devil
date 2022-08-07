@@ -1,4 +1,4 @@
-﻿namespace Game
+﻿namespace ET
 {
     public abstract class Object
     {

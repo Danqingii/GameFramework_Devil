@@ -8,7 +8,7 @@
 using GameFramework.Network;
 using ProtoBuf;
 
-namespace Game
+namespace Game.Mono
 {
     public abstract class PacketBase : Packet, IExtensible
     {

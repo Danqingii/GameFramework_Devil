@@ -1,4 +1,4 @@
-﻿namespace Game.Analyzer
+﻿namespace Game.Mono.Analyzer
 {
     public static class DiagnosticCategories
     {

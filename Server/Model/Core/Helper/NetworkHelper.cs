@@ -2,7 +2,7 @@
 using System.Net;
 using System.Net.NetworkInformation;
 
-namespace Game
+namespace ET
 {
     public static class NetworkHelper
     {

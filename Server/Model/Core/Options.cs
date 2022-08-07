@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Game
+namespace ET
 {
     public enum AppType
     {

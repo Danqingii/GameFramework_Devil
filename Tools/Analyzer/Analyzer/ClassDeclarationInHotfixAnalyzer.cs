@@ -2,7 +2,7 @@
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace Game.Analyzer
+namespace Game.Mono.Analyzer
 {
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class ClassDeclarationInHotfixAnalyzer: DiagnosticAnalyzer

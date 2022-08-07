@@ -1,5 +1,4 @@
-﻿/*
-//------------------------------------------------------------
+﻿//------------------------------------------------------------
 // Game Framework
 // Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
@@ -11,7 +10,7 @@ using System;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace Game
+namespace Game.Mono
 {
     public static class DataTableExtension
     {
@@ -90,4 +89,3 @@ namespace Game
         }
     }
 }
-*/

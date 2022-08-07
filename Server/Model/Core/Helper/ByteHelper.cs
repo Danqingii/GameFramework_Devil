@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Game
+namespace ET
 {
 	public static class ByteHelper
 	{

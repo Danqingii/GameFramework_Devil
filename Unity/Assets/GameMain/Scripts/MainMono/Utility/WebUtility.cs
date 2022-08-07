@@ -7,7 +7,7 @@
 
 using System;
 
-namespace Game
+namespace Game.Mono
 {
     public static class WebUtility
     {

@@ -3,7 +3,7 @@ using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Conventions;
 using UnityEngine;
 
-namespace Game
+namespace ET
 {
     public static class MongoRegister
     {

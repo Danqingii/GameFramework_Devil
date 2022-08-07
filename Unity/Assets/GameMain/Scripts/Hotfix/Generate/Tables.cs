@@ -6,7 +6,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 using Bright.Serialization;
-using Game;
+using ET;
 
 
 namespace cfg

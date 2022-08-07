@@ -7,7 +7,7 @@ using System.IO;
 using ProtoBuf;
 using ProtoBuf.Meta;
 
-namespace Game
+namespace ET
 {
     public static class ProtobufHelper
     {

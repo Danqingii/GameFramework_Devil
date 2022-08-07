@@ -1,7 +1,7 @@
 ﻿using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
-namespace Game
+namespace Game.Mono
 {
     public class ProcedureCheckResources : ProcedureBase
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Game
+namespace ET
 {
     
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true, Inherited = false)]

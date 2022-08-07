@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
-namespace Game
+namespace Game.Mono
 {
     public abstract class SCPacketBase : PacketBase
     {
