@@ -8,7 +8,7 @@ set CONF_ROOT=%WORKSPACE%\Luban\Config
  --input_data_dir %CONF_ROOT%\Datas ^
  --output_code_dir %WORKSPACE%/Server/Model/Generate ^
  --output_data_dir %WORKSPACE%\ServerConfig\Bin ^
- --gen_types code_template,data_bin ^
+ --gen_types code_template,data_json ^
  --template:code:dir cs_server ^
  -s server 
 
