@@ -13,35 +13,40 @@ using System.Collections.Generic;
 namespace Cfg
 {
 
-public sealed partial class Start :  Bright.Config.BeanBase 
+public sealed partial class StartMachine :  Bright.Config.BeanBase 
 {
-    public Start(ByteBuf _buf) 
+    public StartMachine(ByteBuf _buf) 
     {
         Id = _buf.ReadInt();
-        Name = _buf.ReadString();
-        OuterPort = _buf.ReadString();
+        InnerIP = _buf.ReadString();
+        OuterIP = _buf.ReadString();
+        WatcherPort = _buf.ReadString();
         PostInit();
     }
 
-    public static Start DeserializeStart(ByteBuf _buf)
+    public static StartMachine DeserializeStartMachine(ByteBuf _buf)
     {
-        return new Start(_buf);
+        return new StartMachine(_buf);
     }
 
     /// <summary>
-    /// id
+    /// Id
     /// </summary>
     public int Id { get; private set; }
     /// <summary>
-    /// 名字
+    /// 内网地址
     /// </summary>
-    public string Name { get; private set; }
+    public string InnerIP { get; private set; }
     /// <summary>
-    /// 外网端口
+    /// 外网地址
     /// </summary>
-    public string OuterPort { get; private set; }
+    public string OuterIP { get; private set; }
+    /// <summary>
+    /// 守护进程端口
+    /// </summary>
+    public string WatcherPort { get; private set; }
 
-    public const int __ID__ = 80204866;
+    public const int __ID__ = 855185829;
     public override int GetTypeId() => __ID__;
 
     public  void Resolve(Dictionary<string, object> _tables)
@@ -57,8 +62,9 @@ public sealed partial class Start :  Bright.Config.BeanBase
     {
         return "{ "
         + "Id:" + Id + ","
-        + "Name:" + Name + ","
-        + "OuterPort:" + OuterPort + ","
+        + "InnerIP:" + InnerIP + ","
+        + "OuterIP:" + OuterIP + ","
+        + "WatcherPort:" + WatcherPort + ","
         + "}";
     }
     

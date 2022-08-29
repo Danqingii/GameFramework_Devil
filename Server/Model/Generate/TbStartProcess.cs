@@ -11,35 +11,35 @@ using System.Collections.Generic;
 namespace Cfg
 {
    
-public partial class TbStartScene
+public partial class TbStartProcess
 {
-    private readonly Dictionary<int, StartScene> _dataMap;
-    private readonly List<StartScene> _dataList;
-    private static TbStartScene _instance;
+    private readonly Dictionary<int, StartProcess> _dataMap;
+    private readonly List<StartProcess> _dataList;
+    private static TbStartProcess _instance;
     
-    public TbStartScene(ByteBuf _buf)
+    public TbStartProcess(ByteBuf _buf)
     {
-        _dataMap = new Dictionary<int, StartScene>();
-        _dataList = new List<StartScene>();
+        _dataMap = new Dictionary<int, StartProcess>();
+        _dataList = new List<StartProcess>();
         _instance = this;
         
         for(int n = _buf.ReadSize() ; n > 0 ; --n)
         {
-            StartScene _v;
-            _v = StartScene.DeserializeStartScene(_buf);
+            StartProcess _v;
+            _v = StartProcess.DeserializeStartProcess(_buf);
             _dataList.Add(_v);
             _dataMap.Add(_v.Id, _v);
         }
         PostInit();
     }
 
-    public static TbStartScene Instance => _instance;
-    public Dictionary<int, StartScene> DataMap => _dataMap;
-    public List<StartScene> DataList => _dataList;
+    public static TbStartProcess Instance => _instance;
+    public Dictionary<int, StartProcess> DataMap => _dataMap;
+    public List<StartProcess> DataList => _dataList;
 
-    public StartScene GetOrDefault(int key) => _dataMap.TryGetValue(key, out var v) ? v : null;
-    public StartScene Get(int key) => _dataMap[key];
-    public StartScene this[int key] => _dataMap[key];
+    public StartProcess GetOrDefault(int key) => _dataMap.TryGetValue(key, out var v) ? v : null;
+    public StartProcess Get(int key) => _dataMap[key];
+    public StartProcess this[int key] => _dataMap[key];
 
     public void Resolve(Dictionary<string, object> _tables)
     {

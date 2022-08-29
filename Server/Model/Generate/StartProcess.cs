@@ -13,22 +13,20 @@ using System.Collections.Generic;
 namespace Cfg
 {
 
-public sealed partial class StartScene :  Bright.Config.BeanBase 
+public sealed partial class StartProcess :  Bright.Config.BeanBase 
 {
-    public StartScene(ByteBuf _buf) 
+    public StartProcess(ByteBuf _buf) 
     {
         Id = _buf.ReadInt();
-        Process = _buf.ReadInt();
-        Zone = _buf.ReadInt();
-        SceneType = _buf.ReadString();
-        Name = _buf.ReadString();
-        OuterPort = _buf.ReadInt();
+        MachineId = _buf.ReadInt();
+        InnerPort = _buf.ReadInt();
+        AppName = _buf.ReadString();
         PostInit();
     }
 
-    public static StartScene DeserializeStartScene(ByteBuf _buf)
+    public static StartProcess DeserializeStartProcess(ByteBuf _buf)
     {
-        return new StartScene(_buf);
+        return new StartProcess(_buf);
     }
 
     /// <summary>
@@ -36,27 +34,19 @@ public sealed partial class StartScene :  Bright.Config.BeanBase
     /// </summary>
     public int Id { get; private set; }
     /// <summary>
-    /// 所属进程
+    /// 所属机器
     /// </summary>
-    public int Process { get; private set; }
+    public int MachineId { get; private set; }
     /// <summary>
-    /// 所属区
+    /// 内网端口
     /// </summary>
-    public int Zone { get; private set; }
+    public int InnerPort { get; private set; }
     /// <summary>
-    /// 类型
+    /// 程序名
     /// </summary>
-    public string SceneType { get; private set; }
-    /// <summary>
-    /// 名字
-    /// </summary>
-    public string Name { get; private set; }
-    /// <summary>
-    /// 外网端口
-    /// </summary>
-    public int OuterPort { get; private set; }
+    public string AppName { get; private set; }
 
-    public const int __ID__ = 408726890;
+    public const int __ID__ = -279645235;
     public override int GetTypeId() => __ID__;
 
     public  void Resolve(Dictionary<string, object> _tables)
@@ -72,11 +62,9 @@ public sealed partial class StartScene :  Bright.Config.BeanBase
     {
         return "{ "
         + "Id:" + Id + ","
-        + "Process:" + Process + ","
-        + "Zone:" + Zone + ","
-        + "SceneType:" + SceneType + ","
-        + "Name:" + Name + ","
-        + "OuterPort:" + OuterPort + ","
+        + "MachineId:" + MachineId + ","
+        + "InnerPort:" + InnerPort + ","
+        + "AppName:" + AppName + ","
         + "}";
     }
     

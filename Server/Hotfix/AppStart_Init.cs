@@ -1,5 +1,6 @@
 using System;
 using System.Net;
+using Cfg;
 
 namespace ET
 {
@@ -12,12 +13,14 @@ namespace ET
         
         private async ETTask RunAsync(EventType.AppStart args)
         {
-            
-            
-            /*Game.Scene.AddComponent<ConfigComponent>();
+            Game.Scene.AddComponent<ConfigComponent>();
             await ConfigComponent.Instance.LoadAsync();
 
-            StartProcessConfig processConfig = StartProcessConfigCategory.Instance.Get(Game.Options.Process);
+            StartProcess processConfig = TbStartProcess.Instance.Get(Game.Options.Process);
+
+            Log.Debug(processConfig.ToString());
+            
+            /*StartProcessConfig processConfig = StartProcessConfigCategory.Instance.Get(Game.Options.Process);
 
             Game.Scene.AddComponent<TimerComponent>();
             Game.Scene.AddComponent<OpcodeTypeComponent>();

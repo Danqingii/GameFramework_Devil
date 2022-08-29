@@ -10,6 +10,6 @@ set CONF_ROOT=%WORKSPACE%\Luban\Config
  --output_data_dir %WORKSPACE%\Unity\Assets\GameMain\DataTables\Bin ^
  --gen_types code_template,data_bin ^
  --template:code:dir cs_client ^
- -s all 
+ -s client 
 
 pause

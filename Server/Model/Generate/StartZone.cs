@@ -13,50 +13,35 @@ using System.Collections.Generic;
 namespace Cfg
 {
 
-public sealed partial class StartScene :  Bright.Config.BeanBase 
+public sealed partial class StartZone :  Bright.Config.BeanBase 
 {
-    public StartScene(ByteBuf _buf) 
+    public StartZone(ByteBuf _buf) 
     {
         Id = _buf.ReadInt();
-        Process = _buf.ReadInt();
-        Zone = _buf.ReadInt();
-        SceneType = _buf.ReadString();
-        Name = _buf.ReadString();
-        OuterPort = _buf.ReadString();
+        DBConnection = _buf.ReadString();
+        DBName = _buf.ReadString();
         PostInit();
     }
 
-    public static StartScene DeserializeStartScene(ByteBuf _buf)
+    public static StartZone DeserializeStartZone(ByteBuf _buf)
     {
-        return new StartScene(_buf);
+        return new StartZone(_buf);
     }
 
     /// <summary>
-    /// id
+    /// Id
     /// </summary>
     public int Id { get; private set; }
     /// <summary>
-    /// 所属进程
+    /// 数据库地址
     /// </summary>
-    public int Process { get; private set; }
+    public string DBConnection { get; private set; }
     /// <summary>
-    /// 所属区
+    /// 数据库名
     /// </summary>
-    public int Zone { get; private set; }
-    /// <summary>
-    /// 服务器类型
-    /// </summary>
-    public string SceneType { get; private set; }
-    /// <summary>
-    /// 名字
-    /// </summary>
-    public string Name { get; private set; }
-    /// <summary>
-    /// 外网端口
-    /// </summary>
-    public string OuterPort { get; private set; }
+    public string DBName { get; private set; }
 
-    public const int __ID__ = 408726890;
+    public const int __ID__ = -125142258;
     public override int GetTypeId() => __ID__;
 
     public  void Resolve(Dictionary<string, object> _tables)
@@ -72,11 +57,8 @@ public sealed partial class StartScene :  Bright.Config.BeanBase
     {
         return "{ "
         + "Id:" + Id + ","
-        + "Process:" + Process + ","
-        + "Zone:" + Zone + ","
-        + "SceneType:" + SceneType + ","
-        + "Name:" + Name + ","
-        + "OuterPort:" + OuterPort + ","
+        + "DBConnection:" + DBConnection + ","
+        + "DBName:" + DBName + ","
         + "}";
     }
     

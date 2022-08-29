@@ -14,7 +14,6 @@ namespace Cfg
    
 public sealed class Tables
 {
-    public TbStartScene TbStartScene {get; private set; }
     public TbStart TbStart {get; private set; }
 
     public Tables() { }
@@ -22,18 +21,14 @@ public sealed class Tables
     public async ETTask LoadAsync(System.Func<string, ETTask<ByteBuf>> loader)
     {
         var tables = new System.Collections.Generic.Dictionary<string, object>();
-        TbStartScene = new TbStartScene(await loader("tbstartscene")); 
-        tables.Add("TbStartScene", TbStartScene);
         TbStart = new TbStart(await loader("tbstart")); 
         tables.Add("TbStart", TbStart);
 
-        TbStartScene.Resolve(tables); 
         TbStart.Resolve(tables); 
     }
 
     public void TranslateText(System.Func<string, string, string> translator)
     {
-        TbStartScene.TranslateText(translator); 
         TbStart.TranslateText(translator); 
     }
 }

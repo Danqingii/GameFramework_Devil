@@ -11,32 +11,35 @@ using System.Collections.Generic;
 namespace Cfg
 {
    
-public partial class TbStartScene
+public partial class TbStartMachine
 {
-    private readonly Dictionary<int, StartScene> _dataMap;
-    private readonly List<StartScene> _dataList;
+    private readonly Dictionary<int, StartMachine> _dataMap;
+    private readonly List<StartMachine> _dataList;
+    private static TbStartMachine _instance;
     
-    public TbStartScene(ByteBuf _buf)
+    public TbStartMachine(ByteBuf _buf)
     {
-        _dataMap = new Dictionary<int, StartScene>();
-        _dataList = new List<StartScene>();
+        _dataMap = new Dictionary<int, StartMachine>();
+        _dataList = new List<StartMachine>();
+        _instance = this;
         
         for(int n = _buf.ReadSize() ; n > 0 ; --n)
         {
-            StartScene _v;
-            _v = StartScene.DeserializeStartScene(_buf);
+            StartMachine _v;
+            _v = StartMachine.DeserializeStartMachine(_buf);
             _dataList.Add(_v);
             _dataMap.Add(_v.Id, _v);
         }
         PostInit();
     }
 
-    public Dictionary<int, StartScene> DataMap => _dataMap;
-    public List<StartScene> DataList => _dataList;
+    public static TbStartMachine Instance => _instance;
+    public Dictionary<int, StartMachine> DataMap => _dataMap;
+    public List<StartMachine> DataList => _dataList;
 
-    public StartScene GetOrDefault(int key) => _dataMap.TryGetValue(key, out var v) ? v : null;
-    public StartScene Get(int key) => _dataMap[key];
-    public StartScene this[int key] => _dataMap[key];
+    public StartMachine GetOrDefault(int key) => _dataMap.TryGetValue(key, out var v) ? v : null;
+    public StartMachine Get(int key) => _dataMap[key];
+    public StartMachine this[int key] => _dataMap[key];
 
     public void Resolve(Dictionary<string, object> _tables)
     {

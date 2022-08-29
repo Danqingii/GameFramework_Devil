@@ -20,11 +20,13 @@ public partial class {{name}}
     {{~if x.is_map_table ~}}
     private readonly Dictionary<{{cs_define_type key_type}}, {{cs_define_type value_type}}> _dataMap;
     private readonly List<{{cs_define_type value_type}}> _dataList;
+    private static {{name}} _instance;
     
     public {{name}}(ByteBuf _buf)
     {
         _dataMap = new Dictionary<{{cs_define_type key_type}}, {{cs_define_type value_type}}>();
         _dataList = new List<{{cs_define_type value_type}}>();
+        _instance = this;
         
         for(int n = _buf.ReadSize() ; n > 0 ; --n)
         {
@@ -36,6 +38,7 @@ public partial class {{name}}
         PostInit();
     }
 
+    public static {{name}} Instance => _instance;
     public Dictionary<{{cs_define_type key_type}}, {{cs_define_type value_type}}> DataMap => _dataMap;
     public List<{{cs_define_type value_type}}> DataList => _dataList;
 

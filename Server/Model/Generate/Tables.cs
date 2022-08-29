@@ -14,27 +14,37 @@ namespace Cfg
    
 public sealed class Tables
 {
-    public TBStartScene TBStartScene {get; private set; }
-    public TBStart TBStart {get; private set; }
+    public TbStartMachine TbStartMachine {get; private set; }
+    public TbStartProcess TbStartProcess {get; private set; }
+    public TbStartScene TbStartScene {get; private set; }
+    public TbStartZone TbStartZone {get; private set; }
 
     public Tables() { }
     
     public async ETTask LoadAsync(System.Func<string, ETTask<ByteBuf>> loader)
     {
         var tables = new System.Collections.Generic.Dictionary<string, object>();
-        TBStartScene = new TBStartScene(await loader("tbstartscene")); 
-        tables.Add("TBStartScene", TBStartScene);
-        TBStart = new TBStart(await loader("tbstart")); 
-        tables.Add("TBStart", TBStart);
+        TbStartMachine = new TbStartMachine(await loader("tbstartmachine")); 
+        tables.Add("TbStartMachine", TbStartMachine);
+        TbStartProcess = new TbStartProcess(await loader("tbstartprocess")); 
+        tables.Add("TbStartProcess", TbStartProcess);
+        TbStartScene = new TbStartScene(await loader("tbstartscene")); 
+        tables.Add("TbStartScene", TbStartScene);
+        TbStartZone = new TbStartZone(await loader("tbstartzone")); 
+        tables.Add("TbStartZone", TbStartZone);
 
-        TBStartScene.Resolve(tables); 
-        TBStart.Resolve(tables); 
+        TbStartMachine.Resolve(tables); 
+        TbStartProcess.Resolve(tables); 
+        TbStartScene.Resolve(tables); 
+        TbStartZone.Resolve(tables); 
     }
 
     public void TranslateText(System.Func<string, string, string> translator)
     {
-        TBStartScene.TranslateText(translator); 
-        TBStart.TranslateText(translator); 
+        TbStartMachine.TranslateText(translator); 
+        TbStartProcess.TranslateText(translator); 
+        TbStartScene.TranslateText(translator); 
+        TbStartZone.TranslateText(translator); 
     }
 }
 
