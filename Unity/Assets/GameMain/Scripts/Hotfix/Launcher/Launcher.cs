@@ -1,5 +1,5 @@
 ﻿using Bright.Serialization;
-using cfg;
+using Cfg;
 using ET;
 
 namespace Game.Hotfix

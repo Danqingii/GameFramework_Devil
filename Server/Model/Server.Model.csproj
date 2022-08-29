@@ -26,6 +26,7 @@
   
   <ItemGroup>
     <ProjectReference Include="..\..\ThirdParty\ETTask\ETTask.csproj" />
+    <ProjectReference Include="..\..\ThirdParty\LubanLib\LubanLib.csproj" />
     <ProjectReference Include="..\..\ThirdParty\ShareLib\ShareLib.csproj" />
     <ProjectReference Include="..\..\ThirdParty\UnityEngine\UnityEngine.csproj" />
     <ProjectReference Include="..\..\Tools\Analyzer\Analyzer.csproj" />
@@ -35,6 +36,10 @@
     <Content Remove="C:\Users\Guang\.nuget\packages\mongodb.libmongocrypt\1.5.4\contentFiles\any\netstandard2.1\libmongocrypt.dylib" />
     <Content Remove="C:\Users\Guang\.nuget\packages\mongodb.libmongocrypt\1.5.4\contentFiles\any\netstandard2.1\libmongocrypt.so" />
     <Content Remove="C:\Users\Guang\.nuget\packages\mongodb.libmongocrypt\1.5.4\contentFiles\any\netstandard2.1\mongocrypt.dll" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Generate" />
   </ItemGroup>
   
 </Project>

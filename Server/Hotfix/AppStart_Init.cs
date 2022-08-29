@@ -12,6 +12,8 @@ namespace ET
         
         private async ETTask RunAsync(EventType.AppStart args)
         {
+            
+            
             /*Game.Scene.AddComponent<ConfigComponent>();
             await ConfigComponent.Instance.LoadAsync();
 

@@ -14,27 +14,27 @@ namespace Cfg
    
 public sealed class Tables
 {
-    public TbStartScene TbStartScene {get; private set; }
-    public TbStart TbStart {get; private set; }
+    public TBStartScene TBStartScene {get; private set; }
+    public TBStart TBStart {get; private set; }
 
     public Tables() { }
     
     public async ETTask LoadAsync(System.Func<string, ETTask<ByteBuf>> loader)
     {
         var tables = new System.Collections.Generic.Dictionary<string, object>();
-        TbStartScene = new TbStartScene(await loader("tbstartscene")); 
-        tables.Add("TbStartScene", TbStartScene);
-        TbStart = new TbStart(await loader("tbstart")); 
-        tables.Add("TbStart", TbStart);
+        TBStartScene = new TBStartScene(await loader("tbstartscene")); 
+        tables.Add("TBStartScene", TBStartScene);
+        TBStart = new TBStart(await loader("tbstart")); 
+        tables.Add("TBStart", TBStart);
 
-        TbStartScene.Resolve(tables); 
-        TbStart.Resolve(tables); 
+        TBStartScene.Resolve(tables); 
+        TBStart.Resolve(tables); 
     }
 
     public void TranslateText(System.Func<string, string, string> translator)
     {
-        TbStartScene.TranslateText(translator); 
-        TbStart.TranslateText(translator); 
+        TBStartScene.TranslateText(translator); 
+        TBStart.TranslateText(translator); 
     }
 }
 

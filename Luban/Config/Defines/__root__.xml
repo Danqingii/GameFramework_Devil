@@ -1,6 +1,6 @@
 <root>
 
-	<topmodule name="cfg"/>
+	<topmodule name="Cfg"/>
     
     <option name="editor.topmodule" value="editor.cfg"/>
 

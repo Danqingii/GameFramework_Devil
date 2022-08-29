@@ -22,7 +22,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-
     <Compile Include="..\..\Unity\Assets\GameMain\ThirdParty\ETTask\**\*.cs">
         <Link>%(RecursiveDir)%(FileName)%(Extension)</Link>
     </Compile>
