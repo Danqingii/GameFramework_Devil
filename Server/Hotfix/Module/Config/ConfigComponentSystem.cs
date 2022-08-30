@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.IO;
+using Bright.Serialization;
+using Cfg;
 
 namespace ET
 {
@@ -10,7 +10,7 @@ namespace ET
         public override void Awake(ConfigComponent self)
         {
 	        ConfigComponent.Instance = self;
-	        self.ConfigLoader = new LubanConfigLoader();
+	        self.Tables = new Tables();
         }
     }
     
@@ -19,7 +19,7 @@ namespace ET
     {
 	    public override void Destroy(ConfigComponent self)
 	    {
-		    self.ConfigLoader = null;
+		    self.Tables = null;
 		    ConfigComponent.Instance = null;
 	    }
     }
@@ -29,7 +29,12 @@ namespace ET
 	{
 		public static async ETTask LoadAsync(this ConfigComponent self)
 		{
-			await self.ConfigLoader.LoadConfig();
+			await self.Tables.LoadAsync(Load);
+		}
+		
+		private static async ETTask<ByteBuf> Load(string file) {
+			byte[] bytes = await File.ReadAllBytesAsync($"../ServerConfig/Bin/{file}.bytes");
+			return new ByteBuf(bytes);
 		}
 	}
 }

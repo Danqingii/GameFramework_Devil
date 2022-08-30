@@ -149,6 +149,6 @@ namespace ET
             this.Awake((T)o, a, b, c, d);
         }
 
-        public abstract void Awake(T self, A a, B b, C c, D d);
+        public abstract void Awake(T self, A a, B b, C type, D d);
     }
 }

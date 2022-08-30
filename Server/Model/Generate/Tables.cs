@@ -36,7 +36,7 @@ public sealed class Tables
         TbStartMachine.Resolve(tables); 
         TbStartProcess.Resolve(tables); 
         TbStartScene.Resolve(tables); 
-        TbStartZone.Resolve(tables); 
+        TbStartZone.Resolve(tables);
     }
 
     public void TranslateText(System.Func<string, string, string> translator)
