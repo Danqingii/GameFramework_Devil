@@ -19,7 +19,8 @@ namespace ET
             StartProcess processConfig = TbStartProcess.Instance.Get(Game.Options.Process);
 
             Game.Scene.AddComponent<TimerComponent>();
-            /*Game.Scene.AddComponent<OpcodeTypeComponent>();
+            Game.Scene.AddComponent<OpcodeTypeComponent>();
+            /*
             Game.Scene.AddComponent<MessageDispatcherComponent>();
             Game.Scene.AddComponent<SessionStreamDispatcher>();
             Game.Scene.AddComponent<CoroutineLockComponent>();
