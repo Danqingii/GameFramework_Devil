@@ -19,7 +19,8 @@ namespace ET
             StartProcess processConfig = TbStartProcess.Instance.Get(Game.Options.Process);
 
             Game.Scene.AddComponent<TimerComponent>();
-            Game.Scene.AddComponent<OpcodeTypeComponent>();
+            Game.Scene.AddComponent<OpcodeTypeComponent>();        //注册消息的处理者
+            Game.Scene.AddComponent<MessageDispatcherComponent>(); //消息分发组件 key=操作码 value=处理者
             /*
             Game.Scene.AddComponent<MessageDispatcherComponent>();
             Game.Scene.AddComponent<SessionStreamDispatcher>();

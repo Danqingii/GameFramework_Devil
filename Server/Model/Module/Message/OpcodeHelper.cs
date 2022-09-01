@@ -42,7 +42,7 @@ namespace ET
                 return;
             }
             
-            Log.ILog.Debug("[OpcodeHelper.LogMsg] zone: {0} {1}", zone, message);
+            Log.Debug("[OpcodeHelper.LogMsg] zone: {0} {1}", zone, message);
         }
         
         public static void LogMsg(ushort opcode, long actorId, object message)
@@ -57,7 +57,7 @@ namespace ET
                 return;
             }
             
-            Log.ILog.Debug("[OpcodeHelper.LogMsg] actorId: {0} {1}", actorId, message);
+            Log.Debug("[OpcodeHelper.LogMsg] actorId: {0} {1}", actorId, message);
         }
     }
 }

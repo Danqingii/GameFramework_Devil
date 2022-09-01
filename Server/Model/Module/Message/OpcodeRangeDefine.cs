@@ -1,5 +1,8 @@
 ﻿namespace ET
 {
+    /// <summary>
+    /// 操作码范围定义
+    /// </summary>
     public static class OpcodeRangeDefine
     {
         // 10001 - 30000 是pb，中间分成两个部分，外网pb跟内网pb
