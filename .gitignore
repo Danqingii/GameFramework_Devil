@@ -39,6 +39,7 @@ Logs/
 !/ThirdParty/ETTask/ETTask.csproj
 !/ThirdParty/ShareLib/ShareLib.csproj
 !/ThirdParty/UnityEngine/UnityEngine.csproj
+!/ThirdParty/LubanLib/LubanLib.csproj
 /ThirdParty/UnityEngine/obj/*
 
 --tools
